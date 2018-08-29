@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<audioPlayer bind:onEnd='onEnd' bind:onNext='onNext' src='{{src}}' bind:onLast='onLast' title='lalala'/>

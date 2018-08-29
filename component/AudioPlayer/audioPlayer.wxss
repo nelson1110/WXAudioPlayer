@@ -1,0 +1,124 @@
+.container {
+  width: 93%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+.container .controlBox {
+  width: 93%;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto;
+}
+
+.container .title {
+  font-size: 16px;
+}
+
+.container .imgBox {
+  width: 20vw;
+  height: 20vw;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 20vw;
+  padding: 2vw;
+  position: relative;
+}
+
+.container .imgBox .img {
+  width: 100%;
+  height: 100%;
+  flex-grow: 0;
+  margin: auto;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  align-self: center;
+}
+
+.container .imgBox .icon {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 999;
+  margin: auto;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.container .sliderBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: start;
+  margin-top: 5px;
+}
+
+.container .sliderBox .slider {
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+
+.container .controlBox .buttonBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.controlBox .controlImg {
+  width: 6vw;
+  height: 6vw;
+  margin: 0px 10px;
+}
+
+.controlBox .circleBt {
+  width: 6vw;
+  height: 6vw;
+  align-self: flex-end;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.rotate {
+  animation: rotating 10s 0s linear infinite;
+  -webkit-animation: rotating 10s 0s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

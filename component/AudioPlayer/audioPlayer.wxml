@@ -1,0 +1,23 @@
+<view class='container'>
+
+<view class='imgBox'>
+    <image class='img {{isPlaying?"rotate":""}}' animation='{{animationData}}' src='{{image}}'/>
+    <image class='icon' src='{{isPlaying?"../img/pause.png":"../img/play.png"}}' bindtap='{{isPlaying?"_pause":"_play"}}'/>
+  </view>
+  <view class='controlBox'>
+  <view class='title'>{{title}}</view>
+  
+  <view class='sliderBox'>
+    <view style='font-size:14px'>{{current}}</view>
+    <slider class='slider' block-size='14' min='0' max='{{max}}' value='{{position}}' bindchange='_sliderChange' bindchanging='_sliderChanging' />
+    <view style='font-size:14px'>{{time}}</view>
+  </view>
+
+  <view class='buttonBox'>
+    <image class='controlImg' style='margin-left:0px' src='../img/last.png' bindtap='_last'/>
+    <image class='controlImg' src='{{isPlaying?"../img/pause_black.png":"../img/play_black.png"}}' bindtap='{{isPlaying?"_pause":"_play"}}'/>
+    <image class='controlImg' src='../img/next.png' bindtap='_next'/>
+    <image class='circleBt' src='{{isLoop?"../img/list.png":"../img/one_circle.png"}}' bindtap='_loop'/>
+  </view>
+  </view>
+</view>
